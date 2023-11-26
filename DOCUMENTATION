@@ -1,0 +1,92 @@
+hello fellow someone
+
+so this is de documentation
+
+what all these header files like imgui.h misc.hpp do is basically they are stuff that you can import code and use
+
+they are basically libraries if you know what i mean
+
+In programming, a library is a collection of precompiled functions, classes, and other objects that programmers can use to develop software applications. Libraries are designed to simplify software development by providing reusable code for common tasks. They include various features and functionalities, such as data structures, algorithms, input/output operations, graphic rendering, networking, and more.
+Libraries can be specific to a programming language (e.g., the Python Standard Library, Java Standard Library) or serve a specific purpose (e.g., NumPy for numerical computing, React for building user interfaces). They are often created and maintained by either the programming language developers or the community, and they help save time and effort by allowing developers to leverage existing code rather than writing everything from scratch.
+
+Libraries can be either static or dynamic. Static libraries are compiled directly into the application code, while dynamic libraries are loaded and linked at runtime by the operating system or the program itself. Both types offer different ways of incorporating reusable code into a program.
+
+Overall, libraries play a crucial role in software development, providing a vast array of resources and functionalities that can greatly enhance the efficiency and effectiveness of coding projects.
+
+OK NOW
+
+what are all these freaking constants like
+
+constexpr string local_player = 0x1dacd48; // The offset for local player
+    constexpr string glow_enable = 0x10f; // enables glowing (chams, esp etc etc)
+    constexpr string view_matrix = 0x602f41; // View Matrix for campos (I think)
+    constexpr string glow_type = 0x2c0; // type of glow or whatever
+
+they are basically offsets, so you know how variables (A variable is something that you assign) get allocated in memory lets say..
+
+int health = 100; 
+
+basically we dont know the memory location of this
+
+so you use these thigns called offset dumpers which dump memory values for health
+
+and.. the variables like local_player and all are in the processes memory
+
+
+what the hell is this??
+
+namespace Cheats
+{
+    namespace Menu
+    {
+        ImGui::Begin("Apex Legends Cheat.") // Windows title
+
+        if(ImGui::Button("Chams")) // Creates a button called chams.
+        {
+            // Work in progress
+        }
+
+        if(ImGui::Button("Fly"))
+        {
+            // Work in progress
+        }
+
+        if(ImGui::Button("Noclip"))
+        {
+            // Work in progress
+        }
+
+        if(ImGui::Button("Aimbot"))
+        {
+            // Work in progress
+        }
+    }
+}
+
+its basically the code for the menu, as u can see here 
+
+"ImGui::Button("Aimbot")"
+
+its pretty self explanetory
+
+    namespace Cheat
+    {
+        void chams()
+        {
+
+        }
+
+        void fly()
+        {
+
+        }
+
+        void noclip()
+        {
+
+        }
+    }
+}
+
+basically what this code does is create functions where u can implement (i havent implemented it but yeah)
+
