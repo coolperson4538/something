@@ -30,6 +30,11 @@ namespace driver
             MessageBox(NULL, "error", L"failed to get control_function address");
         }
 
-        
+        auto possible_return = static_cast<uint64_t(__stdcall*)(init_t*)>(control_function)(argument);
+		if (possible_return == 0xC0000001L)
+        {
+			MessageBox(NULL, L"driver failed", L"error", MB_OK);
+			return;
+        }
     }
 }

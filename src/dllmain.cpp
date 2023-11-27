@@ -1,5 +1,4 @@
-#include <Windows.h>
-#include "driver.h"
+#include "misc.hpp"
 
 BOOL APIENTRY(hModule module, DWORD reason_for_call_or_some_shit, LPVOID reserved)
 {
