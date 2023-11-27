@@ -10,22 +10,27 @@ namespace Cheats
 
         if(ImGui::Button("Chams")) // Creates a button called chams.
         {
-            // Work in progress
+            
         }
 
         if(ImGui::Button("Fly"))
         {
-            // Work in progress
+            
         }
 
         if(ImGui::Button("Noclip"))
         {
-            // Work in progress
+            
         }
 
         if(ImGui::Button("Aimbot"))
         {
-            // Work in progress
+            
+        }
+
+        if(ImGui::Button("Bunny Hop"))
+        {
+            
         }
     }
 }

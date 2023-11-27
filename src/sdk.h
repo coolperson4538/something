@@ -1,10 +1,9 @@
 #pragma once
-#include <iostream>
-#include <cstdint>
-
-namespace SDK
-{
-    extern HANDLE process_id; // process id for driver
-
-    extern uint64_t module_base;
-}
+#include <ntdef.h>
+#include <ntifs.h>
+#include <ntddk.h>
+#include <windef.h>
+#include <ntstrsafe.h>
+#include "driver.h"
+#include "macro.h"
+#include "imgui.h"

@@ -14,3 +14,19 @@
 #include "modules/NoClip.hpp"
 
 #pragma comment(lib, "d3d9.lib")
+
+namespace offsets
+{
+    constexpr std::string local_player = 0x1dacd48; // The offset for local player
+    constexpr std::string glow_enable = 0x10f; // enables glowing (chams, esp etc etc)
+    constexpr std::string view_matrix = 0x602f41; // View Matrix for campos (I think)
+    constexpr std::string glow_type = 0x2c0; // type of glow or whatever
+}
+
+namespace misc
+{
+    void chams();
+    void aimbot();
+    void bunny_hop();
+    void get_offs();
+}
